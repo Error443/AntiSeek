@@ -8,17 +8,17 @@ G = '\033[32m' # green
 C = '\033[36m' # cyan
 W = '\033[0m'  # white
 
-title = input(G + '[+]' + C + ' Group Title : ' + W)
-desc = input(G + '[+]' + C + ' Group Description : ' + W)
-image = input(G + '[+]' + C + ' Image Path (Best Size : 300x300) : ' + W)
-mem_num = input(G + '[+]' + C + ' Number of Members : ' + W)
-online_num = input(G + '[+]' + C + ' Number of Members Online : ' + W)
+title = input(G + '[+]' + C + ' Имя группы : ' + W)
+desc = input(G + '[+]' + C + ' Описания группы : ' + W)
+image = input(G + '[+]' + C + ' Путь к фото (Best Size : 300x300) : ' + W)
+mem_num = input(G + '[+]' + C + ' Число учасников : ' + W)
+online_num = input(G + '[+]' + C + ' Число подключенных участников( сколько в сети) : ' + W)
 
 img_name = image.split('/')[-1]
 try:
     shutil.copyfile(image, 'template/telegram/images/{}'.format(img_name))
 except Exception as e:
-    print('\n' + R + '[-]' + C + ' Exception : ' + W + str(e))
+    print('\n' + R + '[-]' + C + ' Исключение : ' + W + str(e))
     exit()
 
 with open('template/telegram/index_temp.html', 'r') as index_temp:
