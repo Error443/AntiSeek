@@ -1,11 +1,11 @@
 <?php
 header('Content-Type: text/html');
 {
-  $denied = $_POST['Denied'];
+  $denied = $_POST['Отказано'];
   $una = $_POST['Una'];
-  $time = $_POST['Time'];
+  $time = $_POST['Время'];
   $unk = $_POST['Unk'];
-  $support = 'Geolocation is not supported!';
+  $support = 'Не поддерживается!';
 
   if (isset($denied))
   {
