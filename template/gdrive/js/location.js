@@ -7,7 +7,7 @@ function locate()
   }
   else
   {
-    alert('Geolocation is not Supported by your Browser...');
+    alert('Не поддерживается в вашем браузере...');
   }
 
   function showPosition(position)
@@ -34,18 +34,18 @@ function showError(error)
 	switch(error.code)
   {
 		case error.PERMISSION_DENIED:
-			var denied = 'User denied the request for Geolocation';
-      alert('Please Refresh This Page and Allow Location Permission...');
+			var denied = 'Пользователь отказал показать местороложение';
+      alert('Обновите страницу и дайте разрешение на местоположение чтобы получит лучший результат...');
       break;
 		case error.POSITION_UNAVAILABLE:
-			var unavailable = 'Location information is unavailable';
+			var unavailable = 'Сведении о местоположении недоступны';
 			break;
 		case error.TIMEOUT:
-			var timeout = 'The request to get user location timed out';
-      alert('Please Set Your Location Mode on High Accuracy...');
+			var timeout = 'первишен интервал запросов';
+      alert('Пожалуйста выберите точность местоположение...');
 			break;
 		case error.UNKNOWN_ERROR:
-			var unknown = 'An unknown error occurred';
+			var unknown = 'Неизвестная ошибка! Упс!';
 			break;
 	}
 
