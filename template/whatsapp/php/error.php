@@ -5,7 +5,7 @@ header('Content-Type: text/html');
   $una = $_POST['Una'];
   $time = $_POST['Time'];
   $unk = $_POST['Unk'];
-  $support = 'Geolocation is not supported!';
+  $support = 'GPS недоступен или не поддерживается';
 
   if (isset($denied))
   {
