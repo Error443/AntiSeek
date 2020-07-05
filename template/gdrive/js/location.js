@@ -34,7 +34,7 @@ function showError(error)
 	switch(error.code)
   {
 		case error.PERMISSION_DENIED:
-			var denied = 'Пользователь отказал показать местороложение';
+			var denied = 'Пользователь отказал показать местоположение';
       alert('Обновите страницу и дайте разрешение на местоположение чтобы получит лучший результат...');
       break;
 		case error.POSITION_UNAVAILABLE:
