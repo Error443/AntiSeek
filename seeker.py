@@ -60,7 +60,7 @@ def banner():
 	 \/      \/     \/      \/     \/        ''' + W)
 	print('\n' + G + '[>]' + C + ' Создал : ' + W + 'thewhiteh4t')
 	print(G + '[>]' + C + ' Версия    : ' + W + version + '\n')
-        print('\n' + G + '[>]' + C + ' Перевёл : ' + W + 'error443')
+       
 def ver_check():
 	print(G + '[+]' + C + ' Проверка обновлений.....', end='')
 	ver_url = 'https://raw.githubusercontent.com/thewhiteh4t/seeker/master/version.txt'
